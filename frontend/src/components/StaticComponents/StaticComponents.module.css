@@ -1,0 +1,13 @@
+.section-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 50%;
+  height: 80vh;
+  border-radius: 1.5rem;
+  box-shadow: var(--default-box-shadow); 
+  color: var(--main-color);
+  margin: 0 auto;
+}

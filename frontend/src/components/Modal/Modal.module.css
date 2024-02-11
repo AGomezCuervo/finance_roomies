@@ -1,0 +1,117 @@
+.modal-background {
+  position: absolute;
+  height: 99vh;
+  width: 99vw;
+  top: 0;
+  background-color: rgba(239, 239, 239, 0.3);
+  z-index: 9998;
+  cursor: pointer;
+  backdrop-filter: blur(1px);
+}
+.modal-form__container {
+  padding: 2rem;
+  position: absolute;
+  z-index: 9999;
+  background-color: white;
+  width: clamp(10rem, 50vw, 30rem);
+  min-height: 40vh;
+  border-radius: 1.5rem;
+  box-shadow: var(--default-box-shadow); 
+  color: var(--main-color);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal-form__container h2 {
+  text-align: center;
+}
+
+.modal-form__container label {
+  margin-bottom: .5rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+.modal-form__container input {
+  display: block;
+  width: clamp(10rem, 50vw, 30rem);
+  border-radius: .4rem;
+  height: 2.5rem;
+  border: none ;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  font-size: 1rem;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  color: #4F546C;
+  font-weight: 400;
+}
+
+.modal-form__container select {
+  margin-left: 1rem;
+  height: 2.5rem;
+  width: 5rem;
+  font-size: 1rem;
+  background-color: #F7F7F7;
+  border: 0;
+}
+
+.modal-form__container select:focus {
+  outline-color: var(--main-color);
+}
+
+.modal-form__container > div {
+  margin-bottom: 1rem;
+}
+
+.modal-form__container textarea {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  display: block;
+  width: clamp(10rem, 50vw, 30rem);
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: .4rem;
+  height: 5rem;
+  border: none ;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  font-size: 1rem;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  color: #4F546C;
+  font-weight: 400;
+  max-height: 10rem;
+  margin-bottom: 1rem;
+}
+
+.modal-form__container textarea:focus {
+  outline-color: var(--main-color);
+}
+
+.modal-form__container input::placeholder, .modal-form__container textarea::placeholder {
+  color: #4f546c82;
+  font-weight: 400;
+}
+
+.modal-form__container input:focus {
+  outline-color: var(--main-color);
+}
+
+.modal-form__container button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  width: 95%;
+}
+
+.login-error {
+  color: #d93025;
+  font-size: .9rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+

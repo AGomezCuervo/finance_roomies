@@ -1,0 +1,97 @@
+.debtregister-container {
+  padding: 2rem;
+  height: 80%;
+}
+
+.debtregister-container h1 {
+  text-align: center;
+  z-index: 9999;
+  margin-bottom: 2rem;
+}
+
+.debtregister-container h3 {
+  font-size: 1rem;
+}
+
+.debtregister-table {
+  width: fit-content;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: #4F546C;
+  text-align: left;
+  height: fit-content;
+  box-shadow: none;
+}
+
+.debtregister-table thead {
+  box-shadow: 0 5px 10px #E1E5EE;
+}
+
+.debtregister-table th {
+  font-size: 1rem;
+  font-weight: 600;
+  border-bottom: 1.5px solid rgba(128, 128, 128, 0.3);
+  margin-bottom: 2rem;
+  padding: 1rem clamp(.2rem, 1vw, 2rem);
+  text-transform: uppercase;
+}
+
+.debtregister-table td {
+  border-bottom: 1.5px solid rgba(128, 128, 128, 0.3);
+  font-weight: 600;
+  padding: 1rem clamp(.2rem, 1vw, 2rem);
+  max-width: 6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.debtregister-table__status {
+  border-radius: .2rem;
+  background-color: #FFCDD2;
+  color: #C62828;
+  width: fit-content;
+  padding: 0.2rem 1rem;
+  text-align: center;
+}
+
+.pending {
+    background-color: #FFF0C2;
+    color: #A68B00;
+  }
+  
+.payed {
+    background-color: #C8E6C9;
+    color: #388E3C;
+  }
+
+.debtregister-table__container {
+  box-shadow: 0 5px 10px #E1E5EE;
+  overflow-y: scroll;
+  max-height: 30rem;
+}
+
+.debtregister-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.debtregister-actions button {
+  font-weight: 500;
+  background-color: #dcddff;
+  color: var(--main-color);
+}
+
+.debtregister-actions input {
+  border: none;
+  background-color: #F7F7F7;
+  height: 100%;
+  border-radius: .5rem;
+  box-sizing: content-box;
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.debtregister-actions input:focus {
+  outline-color: var(--main-color);
+}
